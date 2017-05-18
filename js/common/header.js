@@ -2,7 +2,7 @@ define(['jquery'], function($) {
     $('#logout').on('click', function () {
         $.ajax({
              type:'post',
-             url:'v6/logout',
+             url:'/v6/logout',
              success: function () {
                  location.href='/html/home/login.html'
              },
